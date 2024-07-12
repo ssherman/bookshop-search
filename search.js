@@ -14,6 +14,7 @@ const BASE_URL = 'https://bookshop.org/search?keywords=';
 async function searchBook(query) {
   const browser = await puppeteer.launch({
     headless: 'new',
+    executablePath: '/usr/bin/google-chrome-stable',
     args: ['--no-sandbox']
   });
   const page = await browser.newPage();
