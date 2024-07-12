@@ -1,0 +1,22 @@
+{
+  "name": "bookshop-search",
+  "version": "0.0.1",
+  "description": "A tool to search for books on Bookshop.org using Puppeteer.",
+  "main": "search.js",
+  "bin": {
+    "bookshop-search": "./search.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Shane Sherman",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "puppeteer": "^19.6.0",
+    "puppeteer-extra": "^3.2.3",
+    "puppeteer-extra-plugin-adblocker": "^2.11.11",
+    "puppeteer-extra-plugin-stealth": "^2.11.0"
+  }
+}
