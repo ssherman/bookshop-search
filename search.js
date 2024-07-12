@@ -12,7 +12,10 @@ puppeteer.use(AdblockerPlugin({ blockTrackers: true }));
 const BASE_URL = 'https://bookshop.org/search?keywords=';
 
 async function searchBook(query) {
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({
+    headless: 'new',
+    args: ['--no-sandbox']
+  });
   const page = await browser.newPage();
   const searchUrl = `${BASE_URL}${encodeURIComponent(query)}`;
 
