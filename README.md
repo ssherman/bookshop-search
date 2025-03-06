@@ -6,6 +6,7 @@ A command-line tool to search for books on [Bookshop.org](https://bookshop.org) 
 
 - Parses the search results from Bookshop.org.
 - Outputs the results as JSON to standard output.
+- Debug mode for troubleshooting and development.
 
 ## Installation
 
@@ -15,6 +16,24 @@ First, ensure you have Node.js and npm installed. Then, install the package glob
 npm install -g bookshop-search
 bookshop-search "Nineteen Eighty Four by George Orwell"
 ```
+
+## Usage
+
+### Basic Search
+```sh
+bookshop-search "Nineteen Eighty Four by George Orwell"
+```
+
+### Debug Mode
+To enable debug logging and save the raw HTML for inspection:
+```sh
+DEBUG=1 bookshop-search "Nineteen Eighty Four by George Orwell"
+```
+
+When debug mode is enabled, the tool will:
+- Log detailed information about the search process
+- Save the raw HTML to `debug_output.html` for inspection
+- Show information about each book being processed
 
 example output
 ```json

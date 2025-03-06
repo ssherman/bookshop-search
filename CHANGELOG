@@ -1,0 +1,29 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.0.4] - 2024-03-19
+
+### Added
+- Debug mode for troubleshooting and development
+- Environment variable `DEBUG` to control debug output
+- HTML content saving for debugging purposes
+
+### Changed
+- Updated scraping logic to work with new Bookshop.org DOM structure
+- Updated dependencies to latest versions
+- Improved error handling and logging
+
+### Fixed
+- Fixed href extraction from search results
+- Fixed search results parsing to handle new page layout
+
+## [0.0.3] - 2024-03-19
+
+### Added
+- Initial release
+- Basic search functionality
+- JSON output format
